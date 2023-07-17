@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
+  overflow: hidden;
+  /* Olichon, A. (2019, June 2). Black Sand Dunes · Free Stock Photo. Pexels; Pexels. https://www.pexels.com/photo/black-sand-dunes-2387793/ */
+  background: url('./assets/images/bg2.jpeg');
+  background-size: 100%;
 }
 
 code {
