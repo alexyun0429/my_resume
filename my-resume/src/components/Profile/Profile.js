@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import { TimelineContent, TimelineItem } from '@mui/lab';
 import { Typography } from '@mui/material';
