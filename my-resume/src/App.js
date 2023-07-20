@@ -24,9 +24,16 @@ function App() {
             <Header />
             <Switch>
               <Routes>
-                <Route path = '/portfolio' element={<Portfolio />}/>
+                {/* <Route path = '/portfolio' element={<Portfolio />}/> */}
+                <Route path = '/portfolio'>
+                  <Portfolio />
+                </Route>
+
+                <Route path = '/'>
+                  <Resume />
+                </Route>
                 
-                <Route path = '/' element={<Resume />} />
+                {/* <Route path = '/' element={<Resume />} /> */}
                   
               </Routes>
             </Switch>
