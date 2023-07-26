@@ -1,0 +1,7 @@
+/* About me */
+.aboutme_text {
+    color: darkslategrey;
+    font: smaller !important;
+    line-height: 22px !important;
+    white-space: pre-line;
+}

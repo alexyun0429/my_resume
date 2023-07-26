@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Switch } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 
 import Profile from './components/Profile/Profile';
 import Header from './components/Header/Header';
@@ -22,21 +22,15 @@ function App() {
         <Grid item xs>
           <Router>
             <Header />
-            <Switch>
+            <div className='main-content .container_shade'>
               <Routes>
-                {/* <Route path = '/portfolio' element={<Portfolio />}/> */}
-                <Route path = '/portfolio'>
-                  <Portfolio />
-                </Route>
-
-                <Route path = '/'>
-                  <Resume />
-                </Route>
+                <Route path = '/portfolio' element={<Portfolio />}/>
                 
-                {/* <Route path = '/' element={<Resume />} /> */}
+                <Route path = '/' element={<Resume />} />
                   
               </Routes>
-            </Switch>
+            </div>
+            
           </Router>
           <Footer />
         </Grid>
