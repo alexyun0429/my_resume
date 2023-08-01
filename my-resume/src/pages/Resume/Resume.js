@@ -55,9 +55,7 @@ const Resume = () => {
                     <CustomTimelineSeparator />
                     <TimelineContent className='timeline_content'>
                       <Typography className='timeline_title'>{experience.title}</Typography>
-                      <Typography variant='caption' className='timeline_date'>
-                        {experience.date}
-                      </Typography>
+                      <Typography variant='caption' className='timeline_date'>{experience.date}</Typography>
                       {isExpanded[index] ? (
                         <Typography variant='body2' className='timeline_description'>
                           {experience.description}
@@ -73,7 +71,7 @@ const Resume = () => {
                     </TimelineContent>
                   </TimelineItem>
                 ))}
-              </CustomTimeline>;
+              </CustomTimeline>
             </Grid>
 
             {/* Education */}
@@ -88,7 +86,18 @@ const Resume = () => {
                           <Typography className='timeline_title'>{education.title}</Typography>
                           <Typography variant='subtitle2' className='timeline_date'>{education.bachelor}</Typography>
                           <Typography variant='caption' className='timeline_date'>{education.date}</Typography>
-                          <Typography variant='body2' className='timeline_description'>{education.description}</Typography>
+                          {isExpanded[index] ? (
+                        <Typography variant='body2' className='timeline_description'>
+                          {education.description}
+                        </Typography>
+                      ) : (
+                        <div>
+                          <Typography variant='body2' className='timeline_description'>
+                            {education.description.slice(0, 100) + '...'}
+                          </Typography>
+                          <button className='timeline_description_limitbutton' onClick={() => toggleExpanded(index)}>Show more</button>
+                        </div>
+                      )}
                         </TimelineContent>
                       </TimelineItem>
                     ))}
