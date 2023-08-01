@@ -5,3 +5,30 @@
     line-height: 22px !important;
     white-space: pre-line;
 }
+/* end of about me section */
+
+/* Timeline section */
+.resume_timeline .timeline_content .timeline_title {
+    /* text-decoration: underline black !important; */
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.resume_timeline .timeline_content .timeline_date {
+    /* font-size: 14px !important;
+    font-weight: 400 !important; */
+    color: darkslategray
+}
+
+.resume_timeline .timeline_content .timeline_description {
+    color: gray;
+    font-size: small;
+    margin-top: 6px;
+}
+
+.resume_timeline .timeline_content .timeline_description_limitbutton {
+    color: gray;
+    font-size: small;
+    margin-top: 6px;
+}
+/* End of timeline section */
