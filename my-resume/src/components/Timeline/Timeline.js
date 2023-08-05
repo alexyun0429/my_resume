@@ -14,13 +14,10 @@ import { Typography } from "@mui/material";
 const CustomTimeline = ({ title, icon, children }) => {
   return (
     <Timeline className={"timeline"}>
-
       {/* Item Header */}
       <TimelineItem className={"timeline_firstItem"}>
         <TimelineSeparator>
-          <TimelineDot className={"timeline_dot_header"}>
-            {icon}
-          </TimelineDot>
+          <TimelineDot className={"timeline_dot_header"}>{icon}</TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
@@ -31,15 +28,14 @@ const CustomTimeline = ({ title, icon, children }) => {
       </TimelineItem>
       {children}
     </Timeline>
-    
   );
 };
 
 export const CustomTimelineSeparator = () => {
   return (
     <TimelineSeparator className={"separator_padding"}>
-        <TimelineDot variant={"outlined"} className={"timeline_dot"} />
-        <TimelineConnector />
+      <TimelineDot variant={"outlined"} className={"timeline_dot"} />
+      <TimelineConnector />
     </TimelineSeparator>
   );
 };

@@ -1,7 +1,7 @@
-import React from 'react'
-import { Button } from '@mui/material';
+import React from "react";
+import { Button } from "@mui/material";
 
-import './Button.css';
+import "./Button.css";
 
 // const theme = createTheme({
 //   palette: {
@@ -29,17 +29,17 @@ import './Button.css';
 //     outline: 'none',
 //     minWidth: '100px',
 //     lineHeight: '35px',
-//   }) 
+//   })
 
-const CustomButton = ({text, icon}) => {
+const CustomButton = ({ text, icon }) => {
   return (
-        <Button  className='custom_btn' 
-            endIcon={
-                icon ? (<div className='btn_icon_container'>{icon}</div>) : null
-            }>
-                <span className='btn_text'>{text}</span>
-        </Button>
-  )
-}
+    <Button
+      className="custom_btn"
+      endIcon={icon ? <div className="btn_icon_container">{icon}</div> : null}
+    >
+      <span className="btn_text">{text}</span>
+    </Button>
+  );
+};
 
 export default CustomButton;
