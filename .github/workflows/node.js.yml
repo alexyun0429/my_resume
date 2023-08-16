@@ -32,7 +32,7 @@ jobs:
           echo "Contents of my-resume directory:"
           ls -al my-resume
       - name: Install dependencies and start the app
-        working-directory: my-resume
+        working-directory: /home/runner/work/my_resume/my-resume
         run: |
           npm ci
           npm start
