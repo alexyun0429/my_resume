@@ -15,7 +15,7 @@ function App() {
   return (
     <Container className="top_60">
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={4} lg={3}>
+        <Grid item xs={12} sm={12} md={4} lg={3} sx={{ height: "100%" }}>
           <Profile />
         </Grid>
         <Grid item xs>
