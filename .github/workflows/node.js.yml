@@ -31,6 +31,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
+          run: |
+            echo "Contents of repository root directory:"
+            ls -al
+            echo "Contents of my-resume directory:"
+            ls -al my-resume
       - name: Install dependencies and start the app
         working-directory: my-resume
         run: |
